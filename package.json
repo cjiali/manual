@@ -1,0 +1,25 @@
+{
+  "name": "manual",
+  "version": "0.0.1",
+  "description": "To record some developer manual.",
+  "main": "index.js",
+  "repository": "https://cjiali@github.com/cjiali/manual.git",
+  "author": "cjiali <chjiali@outlook.com>",
+  "license": "GPL",
+  "scripts": {},
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --write --parser=typescript"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^4.3.0"
+  },
+  "dependencies": {
+    "lint-staged": "^10.4.0",
+    "prettier": "^2.1.2"
+  }
+}
